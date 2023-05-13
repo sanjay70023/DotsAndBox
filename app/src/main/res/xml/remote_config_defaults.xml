@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>force_update_required</key>
+        <value>false…</value>
+    </entry>
+    <entry>
+        <key>force_update_current_version</key>
+        <value>1.0.0</value>
+    </entry>
+    <entry>
+        <key>force_update_store_url</key>
+        <value>https://play.google.com/store/apps/details?id=com.tiptop.dotsandboxes</value>
+    </entry>
+</defaultsMap><!-- END xml_defaults -->

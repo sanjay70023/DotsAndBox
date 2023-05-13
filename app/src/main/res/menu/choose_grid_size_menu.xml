@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/four"
+        android:title="@string/four_by_four" />
+
+    <item
+        android:id="@+id/five"
+        android:title="@string/five_by_five" />
+
+    <item
+        android:id="@+id/six"
+        android:title="@string/six_by_six" />
+    <item
+        android:id="@+id/seven"
+        android:title="@string/seven_by_seven" />
+    <item
+        android:id="@+id/eight"
+        android:title="@string/eight_by_eight" />
+    <item
+        android:id="@+id/nine"
+        android:title="@string/nine_by_nine" />
+    <item
+        android:id="@+id/ten"
+        android:visible="false"
+        android:title="@string/ten_by_ten" />
+
+</menu>

@@ -1,0 +1,105 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/common_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@android:color/transparent"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/iv_toolbar_back"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingStart="@dimen/_14sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:src="@drawable/back_arrow_icon" />
+
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="@string/home_screen"
+            android:textColor="@color/icon_color_white"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:textSize="@dimen/_16ssp"
+            android:gravity="center"
+            android:drawableBottom="@drawable/titleborder"
+            android:fontFamily="@font/galano_grotesque_black_1"/>
+
+        <ImageView
+            android:id="@+id/iv_toolbar_vibrate"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:src="@drawable/vibrate_icon"
+            android:alpha="1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_toolbar_music"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:src="@drawable/music_icon"
+            android:alpha="1"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/iv_toolbar_sound"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:src="@drawable/sound_icon"
+            android:alpha="1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_toolbar_setting"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:alpha="1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_toolbar_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

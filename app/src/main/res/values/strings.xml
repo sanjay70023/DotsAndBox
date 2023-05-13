@@ -1,0 +1,124 @@
+<!DOCTYPE resources [<!ENTITY appname "Dots And Boxes">]>
+<resources>
+
+<!--live-->
+    <!--&lt;!&ndash;admob id&ndash;&gt;-->
+    <!--<string name="ad_mob_id" translatable="false">ca-app-pub-7897516872608980~4206812860</string>-->
+    <!--<string name="banner_id" translatable="false">ca-app-pub-7897516872608980/4945179461</string>-->
+    <!--<string name="interstitial_id" translatable="false">ca-app-pub-7897516872608980/7926566023</string>-->
+<!--demo-->
+    <!--admob test id-->
+<!--    <string name="ad_mob_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>-->
+<!--    <string name="banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="interstitial_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+
+
+    <string name="app_name">&appname;</string>
+
+    <string name="str_update_message">It seems you do not have the latest version of &appname;, please update it now.</string>
+
+    <string name="dot_box"><![CDATA[Dots & Boxes]]></string>
+    <string name="home_screen">Home</string>
+    <string name="choose_grid_size">Choose Grid Size</string>
+    <string name="me">Me</string>
+    <string name="robot">Robot</string>
+    <string name="versus">Vs</string>
+    <string name="friend">Friend</string>
+    <string name="row">Row</string>
+    <string name="default_row">4</string>
+    <string name="column">Column</string>
+    <string name="default_column">4</string>
+
+    <string name="pref_key_sound">pref_sound</string>
+    <string name="pref_key_music">pref_music</string>
+    <string name="pref_key_vibrate">pref_vibrate</string>
+    <string name="player1TurnName">Your</string>
+    <string name="player2TurnName">Robot\'s</string>
+    <string name="turn_text">%s turn</string>
+    <string name="player_turn_text">%s\'s turn</string>
+    <string name="win">Won</string>
+    <string name="tie">Tie</string>
+    <string name="lost">Lost</string>
+    <string name="you">You</string>
+    <string name="score_default">0</string>
+    <string name="choose_turn_text">Who will take first turn?</string>
+    <string name="your_turn">Your turn</string>
+    <string name="share_app">Play your favourite childhood game of dots and boxes, joining dots to make squares.  Download from here:-  https://play.google.com/store/apps/details?id=com.tiptop.dotsandboxes</string>
+    <string name="play">play</string>
+    <string name="set_players_name">Set players name</string>
+    <string name="set_your_name">Set your name</string>
+    <string name="set_your_opponent_name">Set your opponent name</string>
+    <string name="home">Home</string>
+    <string name="enter_your_name">Please enter your name</string>
+    <string name="enter_opponent_name">Please enter your opponent name</string>
+    <string name="history_screen">History</string>
+    <string name="history_sample_time">1 Day Ago</string>
+    <string name="profile">Profile</string>
+    <string name="game_played">Game Played</string>
+    <string name="win_new">Win</string>
+    <string name="win_percentage">Win Percentage</string>
+    <string name="save">Save</string>
+    <string name="please_enter_name">Please enter name</string>
+
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="app_has_no_permission_to_capture_photo">App has not enough permissions to capture photo</string>
+    <string name="app_has_no_permission_for_gallery">App has not enough permissions to pick photo from gallery</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="str_take_photo">Take Photo</string>
+    <string name="str_choose_from_library">Choose From Library</string>
+    <string name="str_choose_picture">Choose Picture!</string>
+    <string name="history_sample_score">2:3</string>
+    <string name="setting_sound">Sound</string>
+    <string name="setting_music">Music</string>
+    <string name="settings_screen">Settings</string>
+    <string name="setting_vibrate">Vibrate</string>
+    <string name="how_to_screen">How to</string>
+    <string name="connect_to_facebook">Connect To Facebook</string>
+    <string name="you_won">You Won</string>
+    <string name="score">Score</string>
+    <string name="better_luck_next_time">Better Luck Next Time</string>
+    <string name="draw">Draw</string>
+    <string name="cancel">Cancel</string>
+    <string name="four_by_four">Row 4 : Column 4</string>
+    <string name="five_by_five">Row 5 : Column 5</string>
+    <string name="six_by_six">Row 6 : Column 6</string>
+    <string name="seven_by_seven">Row 7 : Column 7</string>
+    <string name="eight_by_eight">Row 8 : Column 8</string>
+    <string name="nine_by_nine">Row 9 : Column 9</string>
+    <string name="ten_by_ten">Row 10 : Column 10</string>
+    <string name="game_exit">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="should_not_same">Both name cannot be same</string>
+    <string name="your_name_is_greater">Your name should be smaller than 8 characters</string>
+    <string name="opponent_name_is_greater">Your name should be smaller than 8 characters</string>
+    <string name="no_history">No history found yet</string>
+    <string name="update">Update</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="pref_key_privacy_policy">pref_privacy_policy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="online">Online</string>
+    <string name="your_play_games_name">Share your google play games id:</string>
+    <string name="share_game_message">This is my google play games id. For playing with me online you have to search with this id:</string>
+    <string name="play_games_not_installed">It seems you don\'t have Google play games application installed. If you want to play online with your friends, Please install the Google play games and restart this game.</string>
+    <string name="ok">Ok</string>
+    <string name="logged_out_from_google_play_games">May be you logged out from google play games. Please restart the game.</string>
+    <string name="player_left_the_match">Player left the match.</string>
+    <string name="row_multiplayer" translatable="false">row</string>
+    <string name="start_multiplayer" translatable="false">start</string>
+    <string name="repeat_multiplayer" translatable="false">repeat?</string>
+    <string name="repeat_yes_multiplayer" translatable="false">repeat:yes</string>
+    <string name="repeat_no_multiplayer" translatable="false">repeat:no</string>
+    <string name="cancel_multiplayer" translatable="false">Cancel</string>
+    <string name="play_multiplayer" translatable="false">Play</string>
+    <string name="wants_to_play_with_you"> wants to play with you again.</string>
+    <string name="repeat_game_rejected">Repeat game rejected.</string>
+    <string name="winPer">Win %</string>
+    <string name="applovin_banner_id">1408a0a22057b3f4</string>
+    <string name="applovin_inter_id">fd9434dedafa1fd8</string>
+
+    <!--    <string name="applovin_key">m4s3qp6snPNQkQq68kEkVxelvGyfdyJS2hZpGTTx7Dsl4Lv99ChavNQFtAcgSvTOAz2zq7Z0lTICiEHWFsFW17</string>-->
+
+</resources>

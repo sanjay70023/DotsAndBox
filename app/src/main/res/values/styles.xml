@@ -1,0 +1,110 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/icon_color_white</item>
+        <item name="android:textColorPrimaryInverse">@color/font_color_title</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="GameTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorButton</item>
+        <item name="android:textColorPrimaryInverse">@color/font_color_title</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+    </style>
+
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/font_color_title</item>
+        <item name="android:background">@color/icon_color_white</item>
+    </style>
+
+    <!--Dashboard circular widget theme-->
+    <style name="widgetCircularTheme">
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:layout_width">@dimen/_40sdp</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:background">@drawable/icon_circular</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <!--desboard text theme-->
+    <style name="dashboardTextTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/galano_grotesque_black_1</item>
+        <item name="android:textColor">@color/icon_color_white</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <!--dashboard option theme-->
+    <style name="dashboardOptionTheme">
+        <item name="android:background">@drawable/white_border</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:padding">@dimen/_6sdp</item>
+    </style>
+  <!--  &lt;!&ndash; dialogue animations &ndash;&gt;
+    <style name="dialog_animation_fade">
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_from_top</item>
+    </style>-->
+
+    <!-- dialogue animations -->
+    <style name="dialog_animation_fade">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+
+    <!-- Settings application theme. -->
+    <style name="SettingsTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">@color/colorTitleBar</item>
+        <item name="android:textColorPrimaryInverse">@color/icon_color_white</item>
+        <item name="android:colorBackground">@color/icon_color_white</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/galano_grotesque_black_1</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="colorAccent">@color/colorTitleBar</item>
+        <item name="android:colorControlNormal">@color/colorTitleBar</item>
+        <item name="colorControlActivated">@color/colorTitleBar</item>
+        <item name="colorSwitchThumbNormal">@color/colorTitleBar</item>
+        <item name="android:colorForeground">@color/colorTitleBar</item>
+        <item name="android:colorPrimary">@color/colorBackground</item>
+        <item name="android:colorPrimaryDark">@color/colorBackground</item>
+        <item name="android:listDivider">@drawable/settings_list_divider</item>
+        <item name="android:dividerHeight">@dimen/_2sdp</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/colorBackground</item>
+        <item name="android:textColor">@color/icon_color_white</item>
+        <item name="android:fontFamily">@font/galano_grotesque_black_1</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+
+</resources>

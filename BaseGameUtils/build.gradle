@@ -1,0 +1,70 @@
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+    }
+}
+
+dependencies {
+    // Set defaults so that BaseGameUtils can be used outside of BasicSamples
+    if (!project.hasProperty('appcompat_library_version')) {
+        ext.appcompat_library_version = '28.0.0'
+    }
+    if (!project.hasProperty('support_library_version')) {
+        ext.support_library_version = '28.0.0'
+    }
+    if (!project.hasProperty('gms_library_version')) {
+        ext.gms_library_version = '8.4.0'
+    }
+    //noinspection GradleCompatible
+    api 'com.android.support:appcompat-v7:28.0.0'
+    //noinspection GradleCompatible
+    api 'com.android.support:support-v4:28.0.0'
+//    api 'com.google.android.gms:play-services-games:10.2.1'
+//    api 'com.google.android.gms:play-services-plus:10.2.1'
+    //noinspection GradleCompatible
+    api 'com.android.support:support-vector-drawable:28.0.0'
+    //noinspection GradleCompatible
+    api 'com.android.support:design:28.0.0'
+}
+
+android {
+    // Set defaults so that BaseGameUtils can be used outside of BasicSamples
+    if (!project.hasProperty('android_compile_version')) {
+        ext.android_compile_version = 31
+    }
+    if (!project.hasProperty('android_min_version')) {
+        ext.android_min_version = 21
+    }
+    if (!project.hasProperty('android_version')) {
+        ext.build_tools_version = "31.0.0"
+    }
+
+    // Set defaults so that BaseGameUtils can be used outside of BasicSamples
+    if (!project.hasProperty('android_min_sdk_version')) {
+        ext.android_min_sdk_version = 21
+    }
+
+    compileSdkVersion 31
+    buildToolsVersion '31.0.0'
+
+    defaultConfig {
+        minSdkVersion android_min_version
+        targetSdkVersion android_compile_version
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    google()
+}
+

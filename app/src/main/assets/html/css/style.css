@@ -1,0 +1,31 @@
+/* Font */
+
+
+@font-face {font-family: 'Muli-Bold';src: url('../fonts/Muli-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Muli-Bold.woff') format('woff'), url('../fonts/Muli-Bold.ttf')  format('truetype'), url('../fonts/Muli-Bold.svg#Muli-Bold') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'Muli-Regular';src: url('../fonts/Muli-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Muli-Regular.woff') format('woff'), url('../fonts/Muli-Regular.ttf')  format('truetype'), url('../fonts/Muli-Regular.svg#Muli-Regular') format('svg');font-weight: normal;font-style: normal;}
+
+
+/* reset css */
+* {margin:0px; padding:0px; border:none; vertical-align: top; outline:none; box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;}
+body {font-family: 'Muli-Regular';font-size: 16px;color: #222b36; -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+img {border:none; outline:none;max-width: 100%;}
+a,h1,h2,h3,h4,h5,h6,p,div,img,blockquote,figure {text-decoration:none; padding:0px; margin:0px;font-weight: normal;vertical-align: middle;}
+ul,ol {list-style-type: none;margin-bottom: 0px;}
+blockquote{border: 0;}
+button, button:focus, button:hover, button:active, button::-moz-focus-inner {outline: none !important;border: 0 !important;}
+
+/* Comman css */
+.container{width: 1170px;max-width: 100%;margin: 0 auto;padding-right: 15px;padding-left: 15px;}
+h1{font-family: 'Muli-Bold';font-size: 20px;line-height: normal;color: #222b36;font-weight: bold;text-transform: capitalize;}
+h2{font-family: 'Muli-Bold';font-size: 16px;line-height: normal;color: #222b36;}
+
+/* Custome css */
+.game-step-main{width: 100%;float: left;padding: 40px 0;}
+.game-step-main h1{margin-bottom: 30px;}
+.game-step-main h2{margin-bottom: 12px;}
+.game-step{width: 100%;float: left;margin-bottom: 34px;}
+.game-step ul {margin-left: 25px;float: left;}
+.game-step ul li{margin-bottom: 8px;width: 100%;float: left;}
+.game-step ul li p{position: relative;padding-left: 22px;}
+.game-step ul li p::before {content: '\f192';font-family: 'Font Awesome 5 Free';font-size: 14px;vertical-align: middle;position: absolute;top: 3px;left: 0;}
+.game-step ul li i {font-size: 15px;vertical-align: top;line-height: normal;margin-right: 6px;padding-right: 6px;}

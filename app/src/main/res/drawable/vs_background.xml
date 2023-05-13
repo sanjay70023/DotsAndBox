@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="5dp"
+        android:top="5dp"
+        android:right="5dp"
+        android:bottom="5dp">
+        <rotate android:fromDegrees="45">
+            <shape>
+                <size
+                    android:width="@dimen/_20sdp"
+                    android:height="@dimen/_20sdp" />
+                <gradient
+                    android:startColor="@color/colorButton"
+                    android:endColor="@color/colorButton" />
+                <stroke
+                    android:width="5dp"
+                    android:color="@color/colorButton" />
+                <corners
+                    android:radius="@dimen/_2sdp"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

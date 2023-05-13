@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:divider="@drawable/settings_list_divider">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:fontFamily="@font/galano_grotesque_black_1"
+        android:icon="@drawable/sound_icon"
+        android:key="@string/pref_key_sound"
+        android:persistent="true"
+        android:shouldDisableView="false"
+        android:text="@string/setting_sound"
+        android:title="@string/setting_sound" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:fontFamily="@font/galano_grotesque_black_1"
+        android:icon="@drawable/music_icon"
+        android:key="@string/pref_key_music"
+        android:persistent="true"
+        android:shouldDisableView="false"
+        android:text="@string/setting_music"
+        android:title="@string/setting_music" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:fontFamily="@font/galano_grotesque_black_1"
+        android:icon="@drawable/vibrate_icon"
+        android:key="@string/pref_key_vibrate"
+        android:persistent="true"
+        android:shouldDisableView="false"
+        android:text="@string/setting_vibrate"
+        android:title="@string/setting_vibrate" />
+
+    <PreferenceCategory android:icon="@null">
+
+        <Preference
+            android:icon="@drawable/privacy_policy"
+            android:key="@string/pref_key_privacy_policy"
+            android:title="@string/privacy_policy">
+            <intent android:action=".activities.PrivacyActivity" />
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

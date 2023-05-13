@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_share"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/share" />
+
+        <ImageView
+            android:id="@+id/btn_music"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/volumoff" />
+
+        <ImageView
+            android:id="@+id/btn_profile"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mypicture" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/ll_choose_grid_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:fontFamily="@font/galano_grotesque_black_1"
+                android:text="@string/choose_grid_size"
+                android:gravity="center"
+                android:background="@drawable/chooseyourgrid"
+                android:textColor="@color/icon_color_white"
+                android:textSize="@dimen/_16ssp" />
+
+
+            <!--For choosing row and column-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_grid_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rowcolmbutton"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_4sdp">
+
+                    <TextView
+                        android:id="@+id/tv_selected_grid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/galano_grotesque_black_1"
+                        android:text="@string/four_by_four"
+                        android:textColor="@color/icon_color_white"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/drop_down_arrow_icon" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_choose_game_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <!--layout for me and robot -->
+            <LinearLayout
+                android:id="@+id/ll_me_vs_robot"
+                android:background="@drawable/blueback"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_player_1_name_vs_robot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/me" />
+
+                    <TextView
+                        android:id="@+id/tv_player_1_name_vs_robot"
+                        style="@style/dashboardTextTheme"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:layout_marginTop="-2dp"
+                        android:background="@drawable/mebox"
+                        android:text="@string/me" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/vs" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_player_2_name_vs_robot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/robot" />
+
+                    <TextView
+                        android:id="@+id/tv_player_2_name_vs_robot"
+                        style="@style/dashboardTextTheme"
+                        android:gravity="center"
+                        android:layout_marginTop="-2dp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:background="@drawable/greenbutton"
+                        android:text="@string/robot" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--layout for me and friend -->
+            <LinearLayout
+                android:id="@+id/ll_me_vs_friend"
+                android:background="@drawable/blueback"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_player_1_name_vs_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/me" />
+
+                    <TextView
+                        android:id="@+id/tv_player_1_name_vs_friend"
+                        style="@style/dashboardTextTheme"
+                        android:gravity="center"
+                        android:layout_marginTop="-2dp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:background="@drawable/mebox"
+                        android:text="@string/me" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/vs" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_player_2_name_vs_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:src="@drawable/friend" />
+
+                    <TextView
+                        android:id="@+id/tv_player_2_name_vs_friend"
+                        style="@style/dashboardTextTheme"
+                        android:gravity="center"
+                        android:layout_marginTop="-2dp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:background="@drawable/greenbutton"
+                        android:text="@string/friend" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--layout for me and online -->
+            <LinearLayout
+                android:id="@+id/ll_me_vs_online"
+                android:background="@drawable/blueback"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_player_1_name_vs_online_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/me" />
+
+                    <TextView
+                        android:id="@+id/tv_player_1_name_vs_online_friend"
+                        style="@style/dashboardTextTheme"
+                        android:gravity="center"
+                        android:layout_marginTop="-2dp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:background="@drawable/mebox"
+                        android:text="@string/me" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/vs" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_player_2_name_vs_online_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:src="@drawable/online" />
+
+                    <TextView
+                        android:id="@+id/tv_player_2_name_vs_online_friend"
+                        style="@style/dashboardTextTheme"
+                        android:gravity="center"
+                        android:layout_marginTop="-2dp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:background="@drawable/greenbutton"
+                        android:text="@string/online" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_history"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/history" />
+
+        <ImageView
+            android:id="@+id/btn_setting"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/settings" />
+
+        <ImageView
+            android:id="@+id/btn_how_to"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:scaleType="center"
+            android:src="@drawable/anyque" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bannerAdContainer"
+            android:layout_gravity="bottom"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorTitleBar</color>
+    <color name="colorPrimaryDark">@color/colorBackground</color>
+    <color name="colorAccent">#fff</color>
+
+    <color name="colorTitleBar">#2d3844</color>
+    <color name="colorButton">#e84e60</color>
+    <color name="colorBackground">#222b36</color>
+
+
+    <color name="font_color_title">#ffffff</color>
+    <color name="font_color_title_small">#8daeff</color>
+    <color name="icon_color_white">#ffffff</color>
+
+
+    <color name="wonColor">#1cf021</color>
+    <color name="lostColor">#ed8a8f</color>
+    <color name="tieColor">#f57301</color>
+
+
+    <color name="player1">#607D8B</color>
+    <color name="player2">#BDBDBD</color>
+    <color name="loader_bg">#BF2A323F</color>
+    <color name="line">#e58e21</color>
+    <color name="black">#111</color>
+    <color name="trans">#00FFFFFF</color>
+
+</resources>

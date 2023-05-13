@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dot_size">@dimen/_4sdp</dimen>
+    <dimen name="line_size">@dimen/_6sdp</dimen>
+    <dimen name="default_box_size">@dimen/_20sdp</dimen>
+    <dimen name="default_snap_length">@dimen/_10sdp</dimen>
+</resources>

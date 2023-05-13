@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="slide_duration">350</integer>
+    <integer name="splash_duration">3400</integer>
+    <integer name="vibrate_duration">75</integer>
+
+    <integer name="default_rows">4</integer>
+    <integer name="default_columns">4</integer>
+</resources>

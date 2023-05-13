@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/greenback"
+    android:minWidth="720dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:paddingEnd="@dimen/_5sdp"
+            android:layout_weight="0.5"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/img_won_player"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/winner_small_trofi_icon" />
+
+                <TextView
+                    android:id="@+id/tv_won_player_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:text="@string/win"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableBottom="@drawable/titleborder"
+                    android:textColor="@color/icon_color_white"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <TextView
+                    android:id="@+id/tv_won_player_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:text="Won Player Name"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/tv_won_player_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:textColor="@color/icon_color_white"
+                    android:textSize="@dimen/_22ssp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:background="@color/colorAccent"
+            android:layout_height="@dimen/_70sdp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_lost_player"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/lost_game_small_graphic" />
+
+                <TextView
+                    android:id="@+id/tv_lost_player_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:text="@string/lost"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableBottom="@drawable/titleborder"
+                    android:textColor="@color/icon_color_white"
+                    android:textSize="@dimen/_14ssp" />
+
+                <TextView
+                    android:id="@+id/tv_lost_player_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:text="lost Player Name"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/tv_lost_player_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:fontFamily="@font/galano_grotesque_black_1"
+                    android:textColor="@color/icon_color_white"
+                    android:textSize="@dimen/_22ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_12ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+
+        android:layout_marginEnd="@dimen/_12ssp">
+
+        <LinearLayout
+            android:id="@+id/ll_restart"
+            android:layout_width="@dimen/_130sdp"
+            android:background="@drawable/playbutton"
+            android:paddingStart="@dimen/_12ssp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_12ssp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Restart"
+                android:fontFamily="@font/galano_grotesque_black_1"
+                android:textColor="@color/icon_color_white"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_home"
+            android:layout_width="@dimen/_130sdp"
+            android:background="@drawable/home"
+            android:paddingStart="@dimen/_12ssp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_12ssp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Home"
+                android:fontFamily="@font/galano_grotesque_black_1"
+                android:textColor="@color/icon_color_white"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
